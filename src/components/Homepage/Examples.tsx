@@ -63,8 +63,8 @@ const ExampleCard = () => {
           className='relative h-full w-full'
         >
           {images.map((image, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className='relative h-full w-full cursor-pointer'
               onClick={() => handleImageClick(index)}
             >
@@ -80,14 +80,20 @@ const ExampleCard = () => {
                 }`}
               />
               {/* Neon Border Effect */}
-              <div className={`absolute inset-0 rounded-3xl transition-all duration-300 ${
-                hover ? 'shadow-[0_0_15px_rgba(255,0,255,0.5)]' : ''
-              } ${clicked && currentImage === index ? 'shadow-[0_0_30px_rgba(255,0,255,0.8)]' : ''}`}></div>
-              
+              <div
+                className={`absolute inset-0 rounded-3xl transition-all duration-300 ${
+                  hover ? 'shadow-[0_0_15px_rgba(255,0,255,0.5)]' : ''
+                } ${
+                  clicked && currentImage === index ? 'shadow-[0_0_30px_rgba(255,0,255,0.8)]' : ''
+                }`}
+              ></div>
+
               {/* Click Effect */}
-              <div className={`absolute inset-0 rounded-3xl transition-all duration-300 ${
-                clicked && currentImage === index ? 'bg-primary/20' : ''
-              }`}></div>
+              <div
+                className={`absolute inset-0 rounded-3xl transition-all duration-300 ${
+                  clicked && currentImage === index ? 'bg-primary/20' : ''
+                }`}
+              ></div>
             </div>
           ))}
         </Carousel>

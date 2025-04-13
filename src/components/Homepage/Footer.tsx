@@ -166,9 +166,8 @@ export default function HomepageFooter(props: HomepageFooterProps) {
               src='/assets/logo.png'
             />
             <div className='font-coiny text-lg leading-5 tracking-wider text-secondary md:text-xl md:leading-6'>
-              <div className='whitespace-nowrap text-primary'>{"AI Integratorz"}</div>
-              <div className='whitespace-nowrap'>
-              Technologies</div>
+              <div className='whitespace-nowrap text-primary'>{'AI Integratorz'}</div>
+              <div className='whitespace-nowrap'>Technologies</div>
             </div>
           </div>
         </div>

@@ -27,9 +27,7 @@ const Card = (props: CardProps) => {
   return (
     <div className='relative flex min-h-full min-w-full flex-row items-center justify-between py-5 md:mx-10'>
       <div className='flex w-full flex-col'>
-        {title && (
-          <h3 className='mb-4 text-3xl font-bold text-secondary'>{title}</h3>
-        )}
+        {title && <h3 className='mb-4 text-3xl font-bold text-secondary'>{title}</h3>}
         <div className='text-justify text-gray-300'>{text}</div>
       </div>
       <Image
@@ -54,13 +52,13 @@ const ServiceCard = ({ title, icon, link }: ServiceCardProps) => {
           {icon}
         </div>
         <h3 className='text-xl font-bold text-secondary'>{title}</h3>
-        
+
         {/* Neon Border Animation */}
         <div className='absolute -left-1 -top-1 h-2 w-2 animate-pulse rounded-full bg-primary/50'></div>
         <div className='absolute -right-1 -top-1 h-2 w-2 animate-pulse rounded-full bg-primary/50'></div>
         <div className='absolute -bottom-1 -left-1 h-2 w-2 animate-pulse rounded-full bg-primary/50'></div>
         <div className='absolute -bottom-1 -right-1 h-2 w-2 animate-pulse rounded-full bg-primary/50'></div>
-        
+
         {/* Hover Effect Lines */}
         <div className='absolute left-0 top-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full'></div>
         <div className='absolute right-0 top-0 h-0 w-[2px] bg-primary transition-all duration-300 group-hover:h-full'></div>

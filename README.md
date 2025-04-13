@@ -11,7 +11,6 @@ This repository is a simple and elegant business-card website for Kus Solutions,
 
 ![Tech Stack](https://github-readme-tech-stack.vercel.app/api/cards?title=Tech+Stack&align=center&titleAlign=center&lineCount=2&width=600&bg=%230D1117&badge=%23161B22&border=%2321262D&titleColor=%2358A6FF&line1=react%2Creact%2C9bf266%3Bnext.js%2Cnext.js%2C9f179b%3B&line2=prettier%2Cprettier%2Cf0a892%3Btypescript%2Ctypescript%2C1227c0%3Btailwindcss%2Ctailwindcss%2C195c11%3B)
 
-
 ## Installation
 
 To run the project locally, follow these steps:
@@ -50,10 +49,7 @@ This will start the server at http://localhost:3000.
 ![Screenshot 2023-10-21 155032](https://github.com/nickmazurenko/kus-solutions-business-card/assets/48516366/58d33c26-ada7-40b8-956c-83ff0a3a0f68)
 ![Screenshot 2023-10-21 155051](https://github.com/nickmazurenko/kus-solutions-business-card/assets/48516366/ed11c583-39c5-4583-a387-7ef1ad149f92)
 
-
 https://github.com/nickmazurenko/kus-solutions-business-card/assets/48516366/ccef1ec0-ab4e-4a1e-b727-b875abfa0dc9
-
-
 
 ## Contributing
 

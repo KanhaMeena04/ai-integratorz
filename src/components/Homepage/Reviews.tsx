@@ -95,12 +95,12 @@ export default function HomepageReviews(props: ReviewsProps) {
         className=''
       >
         {reviews.map((review, index) => (
-          <CarouselSlide 
-            image={review.image} 
-            text={review.text} 
+          <CarouselSlide
+            image={review.image}
+            text={review.text}
             name={review.name}
             designation={review.designation}
-            key={index} 
+            key={index}
           />
         ))}
       </Carousel>
