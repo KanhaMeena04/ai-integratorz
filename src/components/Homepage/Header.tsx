@@ -1,0 +1,126 @@
+import { Navbar } from 'flowbite-react';
+import { gsap } from 'gsap';
+import { ScrollToPlugin } from 'gsap/all';
+import Image from 'next/image';
+import { useEffect, useRef, useState } from 'react';
+import ContactUsButton from '../buttons/ContactUsButton';
+export default function HomepageHeader() {
+  const [isHeaderVisible, setHeaderVisible] = useState(true);
+  const prevScrollPos = useRef(0);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      gsap.registerPlugin(ScrollToPlugin);
+
+      const handleScroll = () => {
+        const currentScrollPos = window.scrollY;
+        const isScrolledDown = prevScrollPos.current < currentScrollPos;
+
+        if (isScrolledDown) {
+          setHeaderVisible(false);
+        } else {
+          setHeaderVisible(true);
+        }
+        prevScrollPos.current = currentScrollPos;
+      };
+
+      window.addEventListener('scroll', handleScroll);
+
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
+  }, []);
+
+  const [sectionId, setSectionId] = useState('');
+  useEffect(() => {
+    if (sectionId.length)
+      gsap.to(window, {
+        duration: 1,
+        scrollTo: {
+          y: '#banner' === sectionId ? 0 : sectionId,
+          autoKill: false
+        }
+      });
+    setSectionId('');
+  }, [sectionId]);
+
+  return (
+    <div
+      className={`sticky top-0 z-50 w-full transition-all duration-1000 ${
+        isHeaderVisible ? 'translate-y-0' : '-translate-y-full'
+      }`}
+    >
+      <Navbar className='bg-background/60' rounded>
+        <Navbar.Brand
+          className='cursor-pointer'
+          onClick={() => {
+            setSectionId('#banner');
+          }}
+        >
+          <Image
+            width={50}
+            height={50}
+            alt='logo'
+            className='h-11 w-auto md:h-14 md:w-auto'
+            src='/assets/logo.png'
+          />
+          <div className='font-coiny text-lg leading-5 tracking-wider text-secondary md:text-xl md:leading-6'>
+            <div className='whitespace-nowrap text-primary'>{"AI Integratorz"}</div>
+            <div className='whitespace-nowrap'>Technologies</div>
+          </div>
+        </Navbar.Brand>
+        <div className='flex h-full cursor-pointer items-center gap-2 text-xs text-secondary hover:text-primary md:order-2 md:text-base  lg:gap-6 lg:pr-5'>
+          <ContactUsButton
+            onClick={() => {
+              setSectionId('#contactUs');
+            }}
+          />
+          <Navbar.Toggle />
+        </div>
+        <Navbar.Collapse>
+          <div
+            onClick={() => {
+              setSectionId('#examples');
+            }}
+            className={`cursor-pointer p-2 text-xl text-secondary hover:text-primary md:p-0 md:text-base `}
+          >
+            Portfolio
+          </div>
+          <div
+            onClick={() => {
+              setSectionId('#technologies');
+            }}
+            className={`cursor-pointer p-2 text-xl text-secondary hover:text-primary md:p-0 md:text-base `}
+          >
+            Tech Stack
+          </div>
+          <div
+            onClick={() => {
+              setSectionId('#reviews');
+            }}
+            className={`cursor-pointer p-2 text-xl text-secondary hover:text-primary md:p-0 md:text-base `}
+          >
+            Testimonials
+          </div>
+          <div
+            onClick={() => {
+              setSectionId('#aboutUs');
+            }}
+            className={`cursor-pointer p-2 text-xl text-secondary hover:text-primary md:p-0 md:text-base `}
+          >
+            About Us
+          </div>
+          <div
+            onClick={() => {
+              setSectionId('#team');
+            }}
+            className={`cursor-pointer p-2 text-xl text-secondary hover:text-primary md:p-0 md:text-base `}
+          >
+            Our Team
+          </div>
+        </Navbar.Collapse>
+      </Navbar>
+    </div>
+  );
+}

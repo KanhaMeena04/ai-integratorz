@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Our Journey",
+    "image": "/assets/textPurple.png",
+    "text": "At AI Integratorz Technologies, we turn ambition into innovation. Born from a dream in a small town and built with grit, we're not just a tech company — we're a movement. From software to startups, from students to success stories, we empower ideas, automate possibilities, and create impact. Fueled by purpose, driven by technology — we innovate today, so you can dominate tomorrow"
+  },
+  {
+    "title": "Our Mission",
+    "image": "/assets/textPurple1.png",
+    "text": "Is to empower dreams through technology. We are committed to building smart, scalable, and socially impactful digital solutions that solve real-world problems. We strive to create a platform where young minds can learn, grow, and lead, turning failures into fuel for innovation. Through every line of code, every project delivered, and every life we touch, we aim to create a legacy of excellence, opportunity, and transformation."
+  },
+  {
+    "title": "Our Vision",
+    "image": "/assets/textCat.png",
+    "text": "To become a globally admired tech powerhouse that not only delivers cutting-edge digital solutions but also inspires a new generation of innovators. At AI Integratorz Technologies, we envision a future where technology bridges gaps, transforms lives, and empowers individuals from the smallest villages to the biggest cities — proving that with vision, courage, and code, anything is possible."
+  },
+  {
+    "title": "Our Services",
+    "image": "/assets/textPurple.png",
+    "services": [
+      {
+        "title": "Web Development",
+        "icon": "🌐",
+        "link": "/contact"
+      },
+      {
+        "title": "Mobile App Development",
+        "icon": "📱",
+        "link": "/contact"
+      },
+      {
+        "title": "Custom Software Development",
+        "icon": "💻",
+        "link": "/contact"
+      },
+      {
+        "title": "UI/UX Designing",
+        "icon": "🎨",
+        "link": "/contact"
+      },
+      {
+        "title": "AI/ML Blockchain Solutions",
+        "icon": "🤖",
+        "link": "/contact"
+      },
+      {
+        "title": "Digital Marketing",
+        "icon": "📈",
+        "link": "/contact"
+      },
+      {
+        "title": "E-com Solutions",
+        "icon": "🛒",
+        "link": "/contact"
+      }
+    ]
+  }
+]

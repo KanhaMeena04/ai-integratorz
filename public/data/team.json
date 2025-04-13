@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Kanhaiya Meena",
+    "designation": "Founder & CEO",
+    "image": "/assets/Team/Kanha.jpg",
+    "bio": "Visionary leader with a passion for AI and innovation. At just 23, he's building a future-ready tech company."
+  },
+  {
+    "name": "Anuradha Meena",
+    "designation": "Manager",
+    "image": "/assets/Team/Anu.jpg",
+    "bio": "Tech expert with 10+ years of experience in AI and machine learning. Leads our technical innovation."
+  },
+  {
+    "name": "Shrishti Sharma",
+    "designation": "Sr. HR Manager",
+    "image": "/assets/Team/Shrashti.jpg",
+    "bio": "Full-stack developer specializing in AI integration and scalable solutions."
+  },
+  {
+    "name": "Pankaj Meena",
+    "designation": "Sr. Frontend Developer",
+    "image": "/assets/Team/Pankaj.jpg",
+    "bio": "Creative designer focused on creating intuitive and beautiful user experiences."
+  },
+  {
+    "name": "Ankit Gurjar",
+    "designation": "Project Manager",
+    "image": "/assets/Team/Ankit.jpg",
+    "bio": "Experienced project manager ensuring smooth delivery of all our projects."
+  },
+  {
+    "name": "Lisa Anderson",
+    "designation": "Marketing Lead",
+    "image": "/assets/team/lisa.png",
+    "bio": "Marketing strategist driving our brand's growth and digital presence."
+  }
+] 
