@@ -34,11 +34,11 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        singleQuote: true, // Use single quotes
-        jsxSingleQuote: true,
-        trailingComma: 'none',
-        printWidth: 100,
-        tabWidth: 2
+        singleQuote: false, // Double quotes, Prettier ke according
+        jsxSingleQuote: false, // JSX mein bhi double quotes
+        trailingComma: 'none', // No trailing commas
+        printWidth: 100, // Max line width
+        tabWidth: 2 // 2 spaces for indentation
       }
     ]
   }

@@ -1,36 +1,36 @@
 [
   {
     "name": "Kanhaiya Meena",
-    "designation": "Founder & CEO",
+    "designation": "Founder",
     "image": "/assets/Team/Kanha.jpg",
-    "bio": "Visionary leader with a passion for AI and innovation. At just 23, he's building a future-ready tech company."
+    "bio": "With over 4.5+ years of experience in the IT industry, Kanhaiya R. Meena is the visionary founder behind AI Integratorz Technologies. Kanhaiya’s journey is defined by his passion for technology and innovation. Having worked with a range of companies and startups, he has successfully scaled AI Integratorz from the ground up. His leadership style fosters a collaborative, results-driven culture, inspiring his young team to push boundaries and deliver cutting-edge solutions."
   },
   {
     "name": "Anuradha Meena",
-    "designation": "Manager",
+    "designation": "Frontend Developer",
     "image": "/assets/Team/Anu.jpg",
-    "bio": "Tech expert with 10+ years of experience in AI and machine learning. Leads our technical innovation."
+    "bio": "With extensive experience in frontend development, Anuradha Meena brings a creative and user-centered approach to every project. Her expertise lies in transforming complex ideas into intuitive, seamless, and visually appealing interfaces."
   },
   {
     "name": "Shrishti Sharma",
     "designation": "Sr. HR Manager",
     "image": "/assets/Team/Shrashti.jpg",
-    "bio": "Full-stack developer specializing in AI integration and scalable solutions."
+    "bio": "As the Senior HR Manager at AI Integratorz, Srishti Sharma is responsible for building a dynamic, motivated, and high-performing team. With a strong background in talent acquisition, employee development, and team management, she ensures the company fosters a positive workplace culture while keeping employee satisfaction and growth at the forefront. Her strategic approach to HR has helped shape a dedicated, driven workforce."
   },
   {
     "name": "Pankaj Meena",
-    "designation": "Sr. Frontend Developer",
+    "designation": "Sr. Full Stack Developer",
     "image": "/assets/Team/Pankaj.jpg",
-    "bio": "Creative designer focused on creating intuitive and beautiful user experiences."
+    "bio": "A seasoned Senior Full Stack Developer, Pankaj Meena has a deep understanding of both front-end and back-end technologies. With expertise in JavaScript, Node.js, React, and databases, Pankaj excels in developing robust, scalable, and efficient solutions. His problem-solving skills and ability to integrate various technologies seamlessly have been critical in delivering complex projects for clients with precision and speed."
   },
   {
     "name": "Ankit Gurjar",
     "designation": "Project Manager",
     "image": "/assets/Team/Ankit.jpg",
-    "bio": "Experienced project manager ensuring smooth delivery of all our projects."
+    "bio": "Ankit Gurjar brings a wealth of experience in project management, ensuring every project is delivered on time, within scope, and at the highest quality. His organizational skills, combined with a keen understanding of client requirements, make him a cornerstone of the project management team. Ankit’s ability to coordinate between clients and developers ensures smooth project flow and successful project completion."
   },
   {
-    "name": "Lisa Anderson",
+    "name": "Avni Sharma",
     "designation": "Marketing Lead",
     "image": "/assets/team/lisa.png",
     "bio": "Marketing strategist driving our brand's growth and digital presence."

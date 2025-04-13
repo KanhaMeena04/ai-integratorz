@@ -39,8 +39,16 @@ const ExampleCard = () => {
     '/assets/examples/example5.png',
     '/assets/examples/example6.png',
     '/assets/examples/example7.png',
-    '/assets/examples/example8.png'
+    '/assets/examples/example8.png',
+    '/assets/examples/example9.png',
+    '/assets/examples/example10.png',
+    '/assets/examples/example11.png',
+    '/assets/examples/example12.png',
+    '/assets/examples/example13.png',
+    
+    
   ];
+
 
   const handleImageClick = (index: number) => {
     setCurrentImage(index);

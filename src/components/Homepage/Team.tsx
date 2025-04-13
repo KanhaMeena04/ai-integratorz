@@ -50,34 +50,27 @@ export default function Team() {
               <div className='absolute bottom-0 right-0 h-[2px] w-0 bg-primary transition-all duration-300 group-hover:w-full'></div>
               <div className='absolute bottom-0 left-0 h-0 w-[2px] bg-primary transition-all duration-300 group-hover:h-full'></div>
 
-              <div
-                className={`relative h-full transition-transform duration-500 ${
-                  flippedCards[index] ? 'rotate-y-180' : ''
-                }`}
-              >
-                {/* Front of Card */}
-                <div className={`backface-hidden ${flippedCards[index] ? 'hidden' : 'block'}`}>
-                  <div className='relative mb-4 aspect-square overflow-hidden rounded-xl'>
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className='object-cover transition-transform duration-300 group-hover:scale-110'
-                    />
-                  </div>
-                  <div className='text-center'>
-                    <h3 className='font-coiny text-2xl text-primary'>{member.name}</h3>
-                    <p className='mt-2 text-lg text-secondary'>{member.designation}</p>
-                  </div>
+              <div className='relative h-full'>
+                <div className='relative mb-4 aspect-square overflow-hidden rounded-xl'>
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className='object-cover transition-transform duration-300 group-hover:scale-110'
+                  />
+                </div>
+                <div className='text-center'>
+                  <h3 className='font-coiny text-2xl text-primary'>{member.name}</h3>
+                  <p className='mt-2 text-lg text-secondary'>{member.designation}</p>
                 </div>
 
-                {/* Back of Card */}
+                {/* Bio Overlay */}
                 <div
-                  className={`backface-hidden absolute inset-0 flex items-center justify-center p-4 ${
-                    flippedCards[index] ? 'block' : 'hidden'
+                  className={`absolute inset-0 flex items-center justify-center bg-black/80 p-4 transition-opacity duration-300 ${
+                    flippedCards[index] ? 'opacity-100' : 'opacity-0 pointer-events-none'
                   }`}
                 >
-                  <p className='text-center text-sm text-gray-300'>{member.bio}</p>
+                  <p className='text-center text-sm text-white'>{member.bio}</p>
                 </div>
               </div>
             </div>
@@ -91,6 +84,7 @@ export default function Team() {
         }
         .backface-hidden {
           backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
         }
       `}</style>
     </div>
